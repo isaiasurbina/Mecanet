@@ -1,0 +1,65 @@
+<ion-header>
+<custom-header></custom-header>
+</ion-header>
+<ion-content padding>
+  <form name="frm_cita" (ngSubmit)="nuevaCita()">
+
+    <ion-label>Fecha y Hora</ion-label>
+    <ion-item>
+      <ion-input [(ngModel)]="cita.fechaHora" type="datetime-local" name="fechaHora" min="08:00:00" max="17:00:00"></ion-input>
+    </ion-item>
+
+    <ion-label>Tipo de servicio</ion-label>
+    <ion-item>
+      <ion-select name="tipoServicio" [(ngModel)]="cita.tipoServicio">
+        <ion-option value="1">Cambio de aceite</ion-option>
+        <ion-option value="2">Afinado mayor y menor</ion-option>
+        <ion-option value="3">Revisión y limpieza de frenos</ion-option>
+        <ion-option value="4">Cambio de pastillas de frenos</ion-option>
+        <ion-option value="5">Inspección de vehículos usados antes de comprarlos</ion-option>
+        <ion-option value="6">Revisión de batería</ion-option>
+        <ion-option value="7">Cambio-rotación de llantas</ion-option>
+        <ion-option value="7">Revisión de mangueras y radiador</ion-option>
+        <ion-option value="7">Diagnóstico</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-label>Comentario</ion-label>
+    <ion-item>
+      <ion-textarea [(ngModel)]="cita.comentario" name="comentario"></ion-textarea>
+    </ion-item>
+    
+    <ion-label>Dirección dónde se encuentra el vehículo</ion-label>
+    <ion-item>
+      <ion-textarea [(ngModel)]="cita.direccion" name="direccion"></ion-textarea>
+    </ion-item>
+
+
+    <ion-label>Municipio - Departamento</ion-label>
+    <ion-item>
+      <ion-select name="municipio_depto" [(ngModel)]="cita.municipio_depto">
+        
+      </ion-select>
+    </ion-item>
+
+    <p class="section-divider text-center">Datos de tu vehículo</p>
+    <ion-label>Marca</ion-label>
+    <ion-item>
+      <ion-input [(ngModel)]="cita.vehiculoMarca" type="text" name="vehiculoMarca"></ion-input>
+    </ion-item>
+
+    <ion-label>Modelo</ion-label>
+    <ion-item>
+      <ion-input [(ngModel)]="cita.vehiculoModelo" type="text" name="vehiculoModelo"></ion-input>
+    </ion-item>
+    
+    
+    <ion-label>Año</ion-label>
+    <ion-item>
+      <ion-input [(ngModel)]="cita.vehiculoAnio" type="text" name="vehiculoAnio"></ion-input>
+    </ion-item>
+    <br><br>
+    <button ion-button type="submit" block class="btn-primary">Hacer Cita</button>
+    <br>
+  </form>
+</ion-content>

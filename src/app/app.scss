@@ -14,3 +14,152 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255,255,255,0.5);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255,255,255,0.5);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255,255,255,0.5);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255,255,255,0.5);
+}
+
+
+.toolbar-background-md {
+    background: #720a12;
+}
+.content-md{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c22f33+29,e73425+100 */
+    background: #c22f33; /* Old browsers */
+    background: -moz-linear-gradient(top, #c22f33 29%, #e73425 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #c22f33 29%,#e73425 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #c22f33 29%,#e73425 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c22f33', endColorstr='#e73425',GradientType=0 ); /* IE6-9 */
+
+    color:white;
+}
+.toolbar-content.toolbar-content-md {
+    color: white;
+}
+h2.profile_name {
+    font-weight: 100;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-size: 32px;
+    line-height: 30px;
+}
+span.city-depto {
+    padding-left: 20px;
+    display: block;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.tabs-md .tabbar {
+    background: #f8f8f8;
+}
+.tabs-md .tab-button {
+    color: white;
+    text-transform:uppercase;
+    background: #720a12;
+    border-bottom: 2px solid #720a12;
+}
+.tabs-md .tab-button-text {
+    font-size: 11pt;
+    text-transform: uppercase;
+}
+.tabs-md .tab-button[aria-selected=true] {
+    color: white;
+    border-color: white;
+}
+.tabs-md .tab-button[aria-selected=true] .tab-button-text{
+    transform: none;
+}
+form .item-md {
+    background: transparent;
+    border: 2px dotted white;
+    border-radius: 7px;
+}
+ion-label {
+    text-transform: uppercase;
+}
+.item-md.item-block .item-inner {
+    border-bottom: 0 none;
+}
+.text-input-md{
+    margin: 5px 8px;
+    color:white;
+}
+.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner{
+    box-shadow: none;
+    border-bottom: 0 none;
+}
+.item-md.item-input.item-input-has-focus .item-inner,
+.item-md.item-input.input-has-focus .item-inner{
+    box-shadow: none;
+    border-color: transparent;
+    border-bottom: 0 none;
+}
+.select-md {
+    max-width: 100%;
+    color: white;
+    width: 100%;
+    padding-left: 7px;
+}
+.select-md .select-icon .select-icon-inner {
+    background-image: url(../assets/imgs/arrow-down.png);
+    border: 0 none;
+    width: 13px;
+    height: 13px;
+    background-size: 13px;
+    background-position: center;
+    background-color: transparent;
+    margin-top: -6.5px;
+}
+.button-block-md.btn-primary {
+    background: transparent;
+    box-shadow: none;
+    padding: 30px 0;
+    border: 2px solid white;
+    border-radius: 7px;
+    font-size: 16px;
+}
+p.section-divider {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.pull-left{
+    float: left;
+}
+.pull-center{
+    margin: auto auto;
+}
+.pull-right{
+    float: right;
+}
+.bar-button.bar-button-md.bar-button-default.bar-button-default-md {
+    color: white;
+}
+.badge-md{
+    background: red;
+}
+/* .bar-button-default .badge-md {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+} */
