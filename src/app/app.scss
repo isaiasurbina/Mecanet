@@ -184,3 +184,31 @@ ion-item.item-md ion-avatar ion-icon{
 .item-end ion-icon {
     font-size: 20pt;
 }
+.dotted-line{
+    clear: both;
+    width: 100%;
+    background: none;
+    border: 0 none;
+    border-bottom: 2px dotted rgba(255,255,255,0.5);
+    margin: 10px 0; 
+    float: none;
+    display: block;
+}
+.block {
+    position: relative;
+    overflow: hidden;
+    clear: both;
+}
+.fab-md {
+    box-shadow: none;
+    background-color: rgba(255,255,255,0.2);
+}
+.uppercase{ text-transform: uppercase; }
+.thin{ font-weight: 100; }
+.scroll-bar-indicator
+{
+	display: none;
+}
+.text-center{
+    text-align: center;
+}

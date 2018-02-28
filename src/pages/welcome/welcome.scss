@@ -1,3 +1,24 @@
 page-welcome {
-
+    img.welcome-logo {
+        width: 80%;
+        display: block;
+        margin: 10vh auto 14vh auto;
+    }
+    ion-slides {
+        height: 50vh;
+    }
+    .swiper-pagination.hide{
+        display: block !important;
+    }
+    .swiper-pagination-bullet-active {
+        background: white;
+    }
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+    }
+    .swiper-slide p {
+        line-height: 20pt;
+        font-size: 11pt;
+    }
 }

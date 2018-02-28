@@ -1,0 +1,15 @@
+<ion-content padding>
+  <img src="../assets/imgs/logo-square.svg" class="landing-logo">
+  <button ion-button block (click)="goToLogin()" class="btn-primary">Iniciar Sesión</button>
+  <p class="text-center uppercase">TAMBIÉN PUEDES</p>
+  <button ion-button block (click)="loginFB()" class="btn-primary">Ingresar con Facebook</button>
+  <br>
+  <br>
+  <br>
+  <h2 class="text-center uppercase thin">Nuevo en Mecanet?</h2>
+  <button ion-button block (click)="gotoRegister()" class="btn-primary">Registrarse en Mecanet</button>
+<ion-chip class="forgot" (click)="goToForgot()">
+  <ion-label>Olvido su contraseña?</ion-label>
+</ion-chip>
+
+</ion-content>

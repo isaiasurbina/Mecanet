@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { ViewChild } from '@angular/core';
+import { Slides } from 'ionic-angular';
+import { LandingPage } from '../landing/landing';
 /**
  * Generated class for the WelcomePage page.
  *
@@ -14,12 +16,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'welcome.html',
 })
 export class WelcomePage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  @ViewChild(Slides) slides: Slides;
+  constructor(public nav: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WelcomePage');
+    this.slides.pager = true;
+    this.slides.centeredSlides = false;
+    this.slides.paginationType = 'bullets';
+  }
+  begin(){
+    this.nav.setRoot(LandingPage);
   }
 
 }

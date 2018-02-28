@@ -1,18 +1,25 @@
-<!--
-  Generated template for the WelcomePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>welcome</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
 
 <ion-content padding>
+<img src="../assets/imgs/h-logo-white.svg" class="welcome-logo">
 
+
+
+<ion-slides>
+  <ion-slide>
+    <h1 class="uppercase thin">Bienvenido</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis orci quis neque lacinia, vel porttitor ex fringilla.
+    Nullam eget dolor luctus nisi pellentesque congue.</p>
+  </ion-slide>
+  <ion-slide>
+    <h1 class="uppercase thin">Con mecanet puedes</h1>
+    <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+  </ion-slide>
+  <ion-slide>
+    <h1 class="uppercase thin">Listo?</h1>
+    <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur non nulla sit amet nisl tempus convallis
+    quis ac lectus.</p>
+  </ion-slide>
+</ion-slides>
+
+<button ion-button block (click)="begin()" class="btn-primary">Empezar</button>
 </ion-content>
